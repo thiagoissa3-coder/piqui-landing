@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(246, 187, 180, 0.32), transparent 30rem),
+    radial-gradient(circle at top right, rgba(185, 217, 246, 0.34), transparent 28rem),
+    #f7f1ea;
+  color: #365247;
+  font-family: "Nunito", system-ui, sans-serif;
+}
+
+::selection {
+  background: #ffd97d;
+  color: #365247;
+}
+
+.grain {
+  position: relative;
+  overflow: hidden;
+}
+
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.16) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black, transparent 82%);
+}
+
+.hero-box {
+  transform-style: preserve-3d;
+  transform: rotate(-4deg);
+}
+
+.hero-box-lid {
+  clip-path: polygon(7% 0, 94% 0, 100% 100%, 0 100%);
+}
+
+.snack-packet {
+  box-shadow: inset 0 -12px 22px rgba(54, 82, 71, 0.08);
+}
+
+.soft-dash {
+  background-image: linear-gradient(to right, rgba(54, 82, 71, 0.2) 50%, transparent 0%);
+  background-position: bottom;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+}
