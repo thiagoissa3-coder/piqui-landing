@@ -14,6 +14,7 @@ import {
   Grape,
   HeartHandshake,
   Leaf,
+  Menu,
   MessageCircle,
   Nut,
   PackageCheck,
@@ -27,6 +28,7 @@ import {
   Sparkles,
   Sprout,
   Wheat,
+  X,
 } from "lucide-react";
 
       const whatsappUrl =
@@ -47,6 +49,7 @@ import {
     grape: Grape,
     "heart-handshake": HeartHandshake,
     leaf: Leaf,
+    menu: Menu,
     "message-circle": MessageCircle,
     nut: Nut,
     "package-check": PackageCheck,
@@ -60,6 +63,7 @@ import {
     sparkles: Sparkles,
     sprout: Sprout,
     wheat: Wheat,
+    x: X,
   };
   const LucideIcon = icons[name] || Circle;
 

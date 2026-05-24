@@ -39,7 +39,7 @@ body {
 
 .hero-box {
   transform-style: preserve-3d;
-  transform: rotate(-4deg);
+  transform: translateX(-50%) rotate(-4deg);
 }
 
 .hero-box-lid {
